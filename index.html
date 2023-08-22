@@ -52,6 +52,19 @@
 						</p>
 					</div>
 					<div class="top-sellers-card">
+						<picture>
+							<source
+								media="min-width:1200px"
+								srcset="
+									./images/tops_img_3_d.png,
+									./images/tops_img_3_d_2x.png
+								" />
+							<img
+								src="./images/tops_img_3_d.png"
+								alt="top sellers description 2"
+						/></picture>
+					</div>
+					<div class="top-sellers-card">
 						<picture
 							><source
 								media="min-width:375px"
@@ -138,12 +151,14 @@
 							<div class="form-data-section">
 								<div class="form-field">
 									<label class="form-label">Personal information</label>
-									<input type="text" name="user_name" placeholder="Name" />
-									<input
-										type="text"
-										name="user_surname"
-										placeholder="Surname"
-									/>
+									<div class="personal-info-input">
+										<input type="text" name="user_name" placeholder="Name" />
+										<input
+											type="text"
+											name="user_surname"
+											placeholder="Surname"
+										/>
+									</div>
 								</div>
 								<div class="form-field">
 									<label class="form-label">Email</label>
