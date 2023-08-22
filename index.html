@@ -17,18 +17,29 @@
 	</head>
 	<body>
 		<main>
-			<section class="container">
-				<div class="top-sellers-section">
+			<section class="container top-sellers-section">
+				<h2><span>tOp</span>&nbsp;Sellers</h2>
+				<div class="top-sellers-section-cards">
 					<div class="top-sellers-card">
 						<picture
 							><source
-								media="min-width:480px"
+								media="min-width:375px"
 								srcset="
 									./images/tops_img_1_m.png,
 									./images/tops_img_1_m_2x.png
 								" />
-							<source media="min-width:768px" srcset="" />
-							<source media="min-width:1158px" srcset="" />
+							<source
+								media="min-width:768px"
+								srcset="
+									./images/tops_img_1_t.png,
+									./images/tops_img_1_t_2x.png
+								" />
+							<source
+								media="min-width:1200px"
+								srcset="
+									./images/tops_img_1_d.png,
+									./images/tops_img_1_d_2x.png
+								" />
 							<img
 								src="./images/tops_img_1_m.png"
 								alt="top sellers description 1"
@@ -43,13 +54,23 @@
 					<div class="top-sellers-card">
 						<picture
 							><source
-								media="min-width:480px"
+								media="min-width:375px"
 								srcset="
 									./images/tops_img_2_m.png,
 									./images/tops_img_2_m_2x.png.png
 								" />
-							<source media="min-width:768px" srcset="" />
-							<source media="min-width:1158px" srcset="" />
+							<source
+								media="min-width:768px"
+								srcset="
+									./images/tops_img_2_t.png,
+									./images/tops_img_2_t_2x.png.png
+								" />
+							<source
+								media="min-width:1200px"
+								srcset="
+									./images/tops_img_2_d.png,
+									./images/tops_img_2_d_2x.png
+								" />
 							<img
 								src="./images/tops_img_2_m.png"
 								alt="top sellers description 2"
@@ -59,32 +80,28 @@
 						</button>
 					</div>
 				</div>
-
 				<div class="backdrop is hidden" data-modal>
 					<div class="modal">
-						<button type="button" class="button close-button" data-modal-close>
+						<button type="button" class="close-button" data-modal-close>
 							<svg>
 								<use
 									href="./images/icons.svg/symbol-defs.svg#icon-close-button"
 								></use>
 							</svg>
-							<!-- de adaugat icon close button in sprite -->
 						</button>
 						<form class="modal-form">
-							<p><span>bUY</span>nOW</p>
+							<p><span>bUY</span>&nbsp;nOW</p>
 							<div class="form-field">
 								<div class="sortiment-weight">
 									<picture
 										><source
-											media="min-width:480px"
+											media="min-width:375px"
 											srcset="
-												./images/first_sortiment_m.png,
-												./images/first_sortiment_m_2x.png
+												./images/first_sortiment.png,
+												./images/first_sortiment_2x.png
 											" />
-										<source media="min-width:768px" srcset="" />
-										<source media="min-width:1158px" srcset="" />
 										<img
-											src="./images/first_sortiment_m.png"
+											src="./images/first_sortiment.png"
 											alt="first sortiment"
 									/></picture>
 									<button>100 g</button>
@@ -92,15 +109,13 @@
 								<div class="sortiment-weight">
 									<picture
 										><source
-											media="min-width:480px"
+											media="min-width:375px"
 											srcset="
-												./images/second_sortiment_m.png,
-												./images/second_sortiment_m_2x.png
+												./images/second_sortiment.png,
+												./images/second_sortiment_2x.png
 											" />
-										<source media="min-width:768px" srcset="" />
-										<source media="min-width:1158px" srcset="" />
 										<img
-											src="./images/second_sortiment_m.png"
+											src="./images/second_sortiment.png"
 											alt="first sortiment"
 									/></picture>
 									<button>200 g</button>
@@ -110,13 +125,11 @@
 										><source
 											media="min-width:480px"
 											srcset="
-												./images/third_sortiment_m.png,
-												./images/third_sortiment_m_2x.png
+												./images/third_sortiment.png,
+												./images/third_sortiment_2x.png
 											" />
-										<source media="min-width:768px" srcset="" />
-										<source media="min-width:1158px" srcset="" />
 										<img
-											src="./images/third_sortiment_m.png"
+											src="./images/third_sortiment.png"
 											alt="first sortiment"
 									/></picture>
 									<button>300 g</button>
@@ -173,6 +186,7 @@
 								<div class="form-field">
 									<label class="form-label">Comments</label>
 									<textarea
+										type="text"
 										name="user_message"
 										placeholder="Enter text"
 									></textarea>
