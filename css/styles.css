@@ -19,8 +19,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 32px;
+
 	padding: 0 20px;
+}
+.top-sellers-section {
+	gap: 32px;
 }
 img {
 	display: block;
@@ -85,6 +88,11 @@ img {
 .submit-button {
 	max-width: 109px;
 }
+.top-sellers-section .button:hover,
+.submit-button:hover {
+	background: var(--light-orange);
+	color: var(--dark-orange);
+}
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -94,6 +102,7 @@ img {
 	height: 100%;
 	/* poti pune o variabila daca o mai ai undeva */
 	background-color: #0000004d;
+	backdrop-filter: blur(2px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -184,6 +193,9 @@ img {
 	align-items: center;
 	position: relative;
 }
+.form-card input {
+	position: relative;
+}
 .form-field input,
 .form-field textarea {
 	padding: 14px 18px;
@@ -233,6 +245,7 @@ input[type="number"] {
 	fill: currentColor;
 }
 .form-field .card-format {
+	padding: 3.938px 5.029px 4.177px 5.029px;
 	width: 22px;
 	height: 13px;
 	position: absolute;
@@ -264,12 +277,33 @@ input[type="number"] {
 	.top-sellers-card:nth-child(3) {
 		align-items: flex-end;
 	}
+	.top-sellers-section h2,
+	.modal-form > p {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: -0.72px;
+		text-transform: uppercase;
+	}
 	.top-sellers-card > p {
 		margin-bottom: 0;
+	}
+	.top-sellers-section .button {
+		padding: 14px 40px;
+		font-size: 18px;
+	}
+	.submit-button {
+		padding: 14px 40px;
+		max-width: 133px;
 	}
 	.modal {
 		max-width: 609px;
 		width: 100%;
+	}
+	.modal .close-button {
+		width: 28px;
+		height: 28px;
+		top: 24px;
+		right: 24px;
 	}
 	.modal-form {
 		flex-grow: 1;
@@ -313,6 +347,27 @@ input[type="number"] {
 	.form-field textarea {
 		height: 137px;
 	}
+	.form-field .country-code {
+		gap: 18px;
+		left: 24px;
+	}
+	.form-field .form-card > input[type="tel"] {
+		padding-left: 140px;
+	}
+	.form-field .country-code span {
+		font-size: 18px;
+		letter-spacing: 0.36px;
+	}
+	.form-field .country-flag {
+		width: 32px;
+		height: 24px;
+	}
+	.form-field .card-format {
+		padding: 5.625px 6.914px 5.967px 6.914px;
+		width: 44px;
+		height: 30px;
+		right: 24px;
+	}
 }
 @media screen and (max-width: 1199px) {
 	.top-sellers-card:nth-child(2) {
@@ -320,6 +375,9 @@ input[type="number"] {
 	}
 }
 @media screen and (min-width: 1200px) {
+	.container {
+		padding: 0;
+	}
 	.top-sellers-section-cards {
 		justify-content: center;
 	}
